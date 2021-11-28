@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Change the n value in code for different Output</h1>
+    <script>
+        function getSum(n)
+     {
+    // To store the respective sum
+    let sumOdd = 0;
+    let sumEven = 0;
+   
+    // Converting integer to String
+    let num = (n).toString();
+   
+  
+    for(let i = 0; i < num.length; i++)
+        if (i % 2 == 0)
+            sumOdd = sumOdd + (num[i] - '0');
+        else
+            sumEven = sumEven + (num[i] - '0');
+   
+    document.write("Sum odd = " + sumOdd+"<br>");
+    document.write("Sum even = " + sumEven+"<br>");
+     }
+ 
+//code
+     let n = 4521331;
+     getSum(n);
+     
+    </script>
+</body>
+</html>
